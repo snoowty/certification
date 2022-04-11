@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ 
+<html lang="ja">
+ 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="formScreenCSS.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  <h1>ログイン画面</h1>
+  <form action="" method="post">
+    <div class="err_msg"><?php echo $err_msg['email']; ?></div>
+    <label for=""><span>メールアドレス</span>
+      <input type="email" name="email" id=""><br>
+    </label>
+    <div class="err_msg"><?php echo $err_msg['password]; ?></div>
+    <label for=""><span>パスワード</span>
+      <input type="text" name="password" id=""><br>
+    </label>
+    <input type="submit" value="送信">
+  </form>
+</body>
+</html>
